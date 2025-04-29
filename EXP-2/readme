@@ -1,0 +1,31 @@
+# 🧠 Simple CNN Model for Image Segmentation
+
+This repository contains a simple Convolutional Neural Network (CNN) model for image segmentation. The model is designed to classify each pixel of an image into one of the predefined classes, commonly used in tasks like semantic segmentation (e.g., distinguishing between the background and the object in an image).
+
+---
+
+## 🔬 Objective
+
+The goal of this project is to implement a simple CNN architecture for semantic image segmentation. The model learns to predict pixel-wise labels for input images, where each pixel belongs to a specific class (e.g., background or object).
+
+---
+
+## 🗂️ Model Overview
+
+- **Architecture**: The model uses a basic U-Net style architecture, consisting of:
+  - **Encoder (Downsampling)**: Convolutional layers followed by max-pooling to capture spatial features.
+  - **Decoder (Upsampling)**: Deconvolution (transpose convolution) layers to upsample the feature maps and produce the segmentation mask.
+  - **Output**: A softmax activation to classify each pixel into one of the predefined classes.
+
+- **Input Shape**: `(128, 128, 3)` - The model takes images of size 128x128 pixels with 3 color channels (RGB).
+  
+- **Output Shape**: The model outputs a segmentation mask with the same spatial dimensions as the input but with the number of classes in each pixel (e.g., binary segmentation for `num_classes=2`).
+
+---
+
+## 📦 Requirements
+
+To run the model, install the required Python libraries:
+
+```bash
+pip install tensorflow numpy
