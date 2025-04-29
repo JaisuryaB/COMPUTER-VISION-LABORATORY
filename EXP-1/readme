@@ -1,127 +1,23 @@
----
-
 # 🧠 CNN Image Classification using CIFAR-10
 
-This project demonstrates how to build a Convolutional Neural Network (CNN) for classifying images using the **CIFAR-10** dataset with TensorFlow and Keras.
+This repository contains a simple Convolutional Neural Network (CNN) implementation using TensorFlow and Keras to classify images from the CIFAR-10 dataset. It also includes functionality to test the model on custom images (e.g., a cat photo).
 
 ---
 
-## 📂 Table of Contents
-- [About](#about)
-- [Dataset](#dataset)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Project Structure](#project-structure)
-- [Future Improvements](#future-improvements)
-- [License](#license)
+## 🔬 Lab Objective
+
+To understand and implement the working of Convolutional Neural Networks (CNNs) for image classification tasks using a standard image dataset (CIFAR-10).
 
 ---
 
-## 📖 About
-This project trains a CNN to classify images into 10 categories:
-```
-airplane, car, bird, cat, deer, dog, frog, horse, ship, truck
-```
+## 🗂️ Dataset
 
-It uses the CIFAR-10 dataset, which consists of 60,000 32x32 color images.
+- **CIFAR-10**: A collection of 60,000 32x32 color images in 10 classes, with 6,000 images per class.
+- Classes: `airplane`, `automobile`, `bird`, `cat`, `deer`, `dog`, `frog`, `horse`, `ship`, `truck`
 
 ---
 
-## 📊 Dataset
-CIFAR-10 is a popular dataset for image classification, containing:
-- **50,000** training images
-- **10,000** test images
-- 10 distinct classes
+## 📦 Requirements
 
-Dataset source: [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
-
----
-
-## 🏗️ Architecture
-The CNN architecture used:
-```
-Input (32x32x3) → [Conv2D → ReLU → MaxPooling] × 2 → Conv2D → ReLU → Flatten → Dense → Output (Softmax)
-```
-
-Layers:
-- 3 Convolutional layers with ReLU activation
-- 2 MaxPooling layers
-- 1 Fully connected hidden layer
-- Output layer with 10 classes
-
----
-
-## ⚙️ Installation
-### Prerequisites:
-- Python 3.x
-- TensorFlow / Keras
-- Matplotlib (for visualization)
-
-### Install dependencies:
 ```bash
-pip install tensorflow matplotlib
-```
-
----
-
-## 🚀 Usage
-1. **Clone the repository:**
-```bash
-git clone https://github.com/your-username/cnn-image-classification.git
-cd cnn-image-classification
-```
-
-2. **Run the training script:**
-```bash
-python cnn_classification.py
-```
-
-3. **(Optional) Visualize training performance:**
-```bash
-python plot_results.py
-```
-
----
-
-## 📈 Results
-After training for 10 epochs, you should see an output similar to:
-```
-Epoch 10/10
-...
-Test accuracy: 0.75 (example)
-```
-
-You can visualize the training/validation accuracy and loss using the generated plots.
-
----
-
-## 📂 Project Structure
-```
-cnn-image-classification/
-│
-├── cnn_classification.py   # Main training and evaluation script
-├── plot_results.py         # Plot accuracy and loss
-├── README.md               # Project documentation
-└── requirements.txt        # Python dependencies
-```
-
----
-
-## 🔧 Future Improvements
-- Hyperparameter tuning (learning rate, epochs, layers)
-- Data augmentation for better generalization
-- Experiment with deeper CNN architectures (e.g., VGG, ResNet)
-- Custom dataset integration
-
----
-
-## 📄 License
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 🙌 Acknowledgments
-- TensorFlow & Keras documentation
-- CIFAR-10 dataset creators
+pip install tensorflow matplotlib numpy
