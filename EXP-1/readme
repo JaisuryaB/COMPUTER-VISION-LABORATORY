@@ -1,5 +1,3 @@
-Sure! Here's a `README.md` for your CNN image classification project.
-
 ---
 
 # 🧠 CNN Image Classification using CIFAR-10
@@ -127,11 +125,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🙌 Acknowledgments
 - TensorFlow & Keras documentation
 - CIFAR-10 dataset creators
-
----
-
-Feel free to reach out if you have any questions or need further improvements! 😊
-
----
-
-Would you like help setting up the `requirements.txt` file as well?
